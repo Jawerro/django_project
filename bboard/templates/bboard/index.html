@@ -8,7 +8,7 @@
         <hl>Объявления</hl>
         <div>
             <a href="{% url 'index' %}">Главная</a>
-            <а href= "{% url 'add' %}">Добавить</а>
+            <a href="{% url 'add' %}">Добавить</a>
             {% for rubric in rubrics %}
             <a href="{% url 'by_rubric' rubric.pk %}">{{ rubric.name }}</a>
             {% endfor %}
